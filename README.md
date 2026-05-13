@@ -87,5 +87,8 @@ mi-app/
 
 ## Links útiles
 
-https://www.codecademy.com/learn/build-ai-applications-with-streamlit
+ https://streamlit.io/gallery
+ https://github.com/streamlit/streamlit
+ https://streamlit.io/playground
+ https://www.codecademy.com/learn/build-ai-applications-with-streamlit
 
