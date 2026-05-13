@@ -95,3 +95,5 @@ mi-app/
  
  [Curso gratuito](https://www.codecademy.com/learn/build-ai-applications-with-streamlit)
 
+ [Web del proyecto](https://anahi-am.github.io/streamlit/)
+
