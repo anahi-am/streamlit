@@ -3,110 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <title>Streamlit Project</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <style>
     body { font-family: sans-serif; max-width: 860px; margin: 40px auto; padding: 0 20px; }
     iframe { width: 100%; height: 450px; border: 1px solid rgba(0,0,0,0.1); }
+    pre { background: #f4f4f4; padding: 12px; border-radius: 6px; overflow-x: auto; }
+    code { font-family: monospace; }
   </style>
 </head>
 <body>
 
-  <h1>README</h1>
-  <p># Cómo instalar Streamlit con un entorno virtual
+  <div id="readme"></div>
+
+  <script>
+    const markdown = `
+# Cómo instalar Streamlit con un entorno virtual
 
 ## Requisitos previos
-
 - Python 3.8 o superior instalado
 - Una terminal
 
 ---
 
 ## 1. Crea una carpeta para el proyecto
-
-```bash
+\`\`\`bash
 mkdir mi-app
 cd mi-app
-```
+\`\`\`
 
 ## 2. Crea el entorno virtual
-
-```bash
+\`\`\`bash
 python -m venv venv
-```
-
-Esto crea una carpeta llamada `venv` dentro de tu proyecto.
+\`\`\`
+Esto crea una carpeta llamada \`venv\` dentro de tu proyecto.
 
 ## 3. Activa el entorno virtual
 
 **Mac / Linux:**
-```bash
+\`\`\`bash
 source venv/bin/activate
-```
+\`\`\`
 
 **Windows:**
-```bash
-venv\Scripts\activate
-```
+\`\`\`bash
+venv\\Scripts\\activate
+\`\`\`
 
-Sabrás que está activo cuando veas `(venv)` al inicio de tu terminal.
+Sabrás que está activo cuando veas \`(venv)\` al inicio de tu terminal.
 
 ## 4. Instala Streamlit
-
-```bash
+\`\`\`bash
 pip install streamlit
-```
+\`\`\`
 
 ## 5. Verifica la instalación
-
-```bash
+\`\`\`bash
 streamlit hello
-```
-
+\`\`\`
 Esto abre una app de demo en el navegador. Si carga, todo funciona.
 
 ## 6. Crea tu app
 
-Crea un archivo `app.py`:
-
-```python
+Crea un archivo \`app.py\`:
+\`\`\`python
 import streamlit as st
-
 st.title("Mi primera app")
 st.write("Hola, mundo!")
-```
+\`\`\`
 
 ## 7. Ejecuta tu app
-
-```bash
+\`\`\`bash
 streamlit run app.py
-```
-
-La app se abre automáticamente en `http://localhost:8501`.
+\`\`\`
+La app se abre automáticamente en \`http://localhost:8501\`.
 
 ## Desactivar el entorno
-
-```bash
+\`\`\`bash
 deactivate
-```
+\`\`\`
 
 ---
 
 ## Estructura del proyecto
-
-```
+\`\`\`
 mi-app/
 ├── venv/
 └── app.py
-```
+\`\`\`
 
 ## Links útiles
+- [Ejemplos de apps](https://streamlit.io/gallery)
+- [Streamlit GitHub](https://github.com/streamlit/streamlit)
+- [Prueba Streamlit](https://streamlit.io/playground)
+- [Curso gratuito](https://www.codecademy.com/learn/build-ai-applications-with-streamlit)
+    `;
+    document.getElementById('readme').innerHTML = marked.parse(markdown);
+  </script>
 
-    https://streamlit.io/gallery
-    https://github.com/streamlit/streamlit
-    https://streamlit.io/playground
-    https://www.codecademy.com/learn/build-ai-applications-with-streamlit </p>
-
-  <!-- Figma presentation below -->
   <h2>Presentation</h2>
-  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/slides/ZDXeZvxct4a1DpnO473k1n/Streamlit-pildora?node-id=0-20&embed-host=share" allowfullscreen></iframe>
+  <iframe src="https://embed.figma.com/slides/ZDXeZvxct4a1DpnO473k1n/Streamlit-pildora?node-id=0-20&embed-host=share" allowfullscreen></iframe>
+
 </body>
 </html>
