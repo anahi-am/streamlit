@@ -84,3 +84,7 @@ mi-app/
 ├── venv/
 └── app.py
 ```
+
+## Link a la presentación
+
+https://www.figma.com/deck/ZDXeZvxct4a1DpnO473k1n/Streamlit-pildora?node-id=49-77&t=SqJFAKZwo6OKhsOU-1
