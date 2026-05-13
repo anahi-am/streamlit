@@ -85,6 +85,7 @@ mi-app/
 └── app.py
 ```
 
-## Link a la presentación
+## Links útiles
 
-https://www.figma.com/deck/ZDXeZvxct4a1DpnO473k1n/Streamlit-pildora?node-id=49-77&t=SqJFAKZwo6OKhsOU-1
+https://www.codecademy.com/learn/build-ai-applications-with-streamlit
+
